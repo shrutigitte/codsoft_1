@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="portcss.css">
+    <script src="https://kit.fontawesome.com/8b6cd9cb51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="IMG_1542" alt="SG" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header_text">
+            <p>UI/UX designer</p>
+            <h1>Hi ,I am <span>Shruti</span><br> from New Delhi,IND</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_4749.JPG" id="img1"alt="SG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me✌🏻</h1>
+                <p>I am a 20 yr old residing in New Delhi,IND Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut qui modi doloremque? Sed ab explicabo eaque inventore harum nemo, modi repellat fugit sequi! Sunt mollitia repudiandae inventore consequatur suscipit officia!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')"">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')"">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>DSA</span><br> Data Structures and Algorithms In C++</li>
+                        <li><span>Web Development</span><br> Designing Web/App interfaces</li>
+                        <li><span>Dance</span><br>Dancing my heart out.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023</span><br> Learning Web Development</li>
+                        <li><span>2021-2025(present)</span><br> b.Tech in information Technology</li>
+                        <li><span>2007-2021</span><br>Schooling</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Current </span><br>Studying B.Tech at MAIT </li>                           
+                         <!-- <li><span>2019 - 2021</span><br> Team lead at StarApp LLC.</li> -->
+                            <li><span>2017 - 2019</span><br>Made a Website</li>
+                            <!-- <li><br>Int</li> <br></li> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolore officia perferendis nostrum sunt recusandae natus? Dolore sit esse, itaque doloremque ipsam quas perspiciatis deleniti recusandae velit ea architecto temporibus voluptates dicta rem eum.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolore officia perferendis nostrum sunt recusandae natus? Dolore sit esse, itaque doloremque ipsam quas perspiciatis deleniti recusandae velit ea architecto temporibus voluptates dicta rem eum.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur dolore officia perferendis nostrum sunt recusandae natus? Dolore sit esse, itaque doloremque ipsam quas perspiciatis deleniti recusandae velit ea architecto temporibus voluptates dicta rem eum.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------portfolio------------------------------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+           <div class="work">
+            <img src="ss website1.jpg" alt="img">
+            <div class="layer">
+                <h3>Travel Website</h3>
+                <p>It allows user to book hotel see its features and make thier travel easier</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div> 
+           <div class="work">
+            <img src="sswebsite2.jpg" alt="img"><div class="layer">
+                <h3>Apple Clone</h3>
+                <p>In the Beginning i made a clone of the Apple website</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div> 
+           <div class="work">
+            <img src="sswebsite3.jpg" alt="img">
+            <div class="layer">
+                <h3>an ESG tracking wesbite</h3>
+                <p>A website that helps reduce carbon emissions by focusing on ESG</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div> 
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+    </div>
+</div>
+<!-- -----------------------------contact----------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p>email:- <a href="#">shrutigitte@gmail.com</a></p>
+                <p>Mobile:- <a href="#">1234567890</a></p>
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Shruti-Gitte/pfbid0giFpGYLiEQpeZbaoJnjompdUFYSc5XfsXd3Pnho9J4a7uofTokzRPHdzxuUf9AZEl/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://mobile.twitter.com/shrutigitte" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="https://www.instagram.com/shrutigitte/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://in.linkedin.com/in/shruti-gitte-159506227?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <a href="#" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <h5>Name:</h5>
+                    <input type="text" name="Name" placeholder="Type your name" required>
+                    <h5>Email:</h5>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <h5>Message:</h5>
+                    <textarea name="Message" cols="40" rows="6" placeholder="Type Your Message"></textarea><br>
+                    <h6>* represents mandatory</h6>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copywright">
+        <p>Copywright © Shruti💛✌🏻
+            2023 
+        </p>
+    </div>
+</div>
+<script src="portwebsite.js"></script>
+</body>
+</html>
